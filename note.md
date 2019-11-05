@@ -46,6 +46,15 @@ Migrations are a way to record changes to the database schema.
 
 Optionally install knex globally on your system: `npm i -g knex` or `yarn global add knex`.
 
+    *** Additional Tips ***********************************
+    Steps to implement when you get get a permission error
+    // First check who own the directory // 
+    - run `whoami`
+
+    The rename the owner to current user
+    - run `sudo chown -R $USER /usr/local/lib/node_modules`
+    ********************************************************
+
 Initialize Knex for our project: `npx knex init`.
 
 Create a migration: `npx knex migrate:make name`
