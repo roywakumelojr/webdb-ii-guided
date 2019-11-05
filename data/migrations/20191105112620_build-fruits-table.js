@@ -7,7 +7,7 @@ exports.up = function(knex) {
     // create a 'name' column, unique, not-nullable, text, 128
     table.text('name', 128).unique().notNullable();
     table.decimal('avgweightoz');
-    table.boolean('delicious').default(1);
+    table.boolean('delicious').defaultTo(1);
   })
 };
 
