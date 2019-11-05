@@ -2,7 +2,7 @@
 exports.up = function(knex) {
   return knex.schema.createTable('fruits', table => {
     // primary key, auto incrementing, not null etc
-    table.increments('fancyId');
+    table.increments('id');
 
     // create a 'name' column, unique, not-nullable, text, 128
     table.text('name', 128).unique().notNullable();
